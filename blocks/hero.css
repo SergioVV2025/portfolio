@@ -1,8 +1,10 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #0f172a url("../images/developer5.jpg") no-repeat center
-    center fixed;
+  background-image: url("../images/developer6.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   color: #f1f5f9;
 }
 
@@ -11,13 +13,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .hero__content {
   text-align: center;
   max-width: 600px;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  min-height: 275px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
 .hero__name {

@@ -1,2 +1,6 @@
 @import url("../vendor/normalize.css");
 @import url("../blocks/hero.css");
+@import url("../blocks/projects.css");
+@import url("../blocks/aboutme.css");
+@import url("../blocks/contact.css");
+@import url("../blocks/skills.css");

@@ -1,0 +1,25 @@
+.skills {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.skills__group {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.skills__title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.skills__group p {
+  margin-bottom: 10px;
+  color: #cbd5f5;
+}
