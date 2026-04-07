@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0f172a;
+  color: #f1f5f9;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__content {
+  text-align: center;
+  max-width: 600px;
+}
+
+.hero__name {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero__role {
+  font-size: 1.5rem;
+  color: #38bdf8;
+  margin-bottom: 1rem;
+}
+
+.hero__tagline {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.hero__button {
+  text-decoration: none;
+  padding: 12px 24px;
+  background-color: #38bdf8;
+  color: #0f172a;
+  border-radius: 8px;
+  font-weight: bold;
+}
