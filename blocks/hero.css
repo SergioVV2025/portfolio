@@ -1,7 +1,8 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #0f172a;
+  background-color: #0f172a url("../images/developer5.jpg") no-repeat center
+    center fixed;
   color: #f1f5f9;
 }
 
@@ -15,6 +16,8 @@ body {
 .hero__content {
   text-align: center;
   max-width: 600px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .hero__name {
