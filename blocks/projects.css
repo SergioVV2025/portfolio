@@ -1,6 +1,6 @@
 .projects {
   padding: 80px 20px;
-  background-color: rgba(0, 0, 0, 0.75);
+  /* background-color: rgba(0, 0, 0, 0.75); */
 }
 
 .projects__title {
@@ -24,6 +24,15 @@
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+.project:last-child {
+  margin-bottom: 0;
+}
+
+.project:first-of-type {
+  border: 2px solid #38bdf8;
+  transform: scale(1.02);
+}
+
 .project__title {
   margin-bottom: 10px;
   color: #38bdf8;
@@ -41,7 +50,11 @@
 }
 
 .project__links a {
-  margin-right: 15px;
   text-decoration: none;
   color: #38bdf8;
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid #38bdf8;
+  border-radius: 6px;
+  margin-right: 10px;
 }

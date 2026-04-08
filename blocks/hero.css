@@ -1,19 +1,9 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-image: url("../images/developer6.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  color: #f1f5f9;
-}
-
 .hero {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.75);
+  /* background-color: rgba(0, 0, 0, 0.75); */
 }
 
 .hero__content {
