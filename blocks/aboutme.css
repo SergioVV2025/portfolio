@@ -1,25 +1,29 @@
 .about {
-  /* background-color: rgba(0, 0, 0, 0.75); */
+  padding: 80px 20px;
 }
 
 .about__me {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: clamp(24px, 4vw, 42px);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 18px;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  background-color: rgba(0, 0, 0, 0.1);
-  padding: 80px 20px;
-  max-width: 700px;
-  margin: 0 auto;
-  border-radius: 12px;
+  background-color: rgba(15, 23, 42, 0.62);
 }
 
 .about__title {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 30px;
+  margin: 0 0 24px;
+  font-size: clamp(2rem, 5vw, 3rem);
 }
 
 .about__text {
-  margin-bottom: 20px;
-  line-height: 1.6;
-  color: #cbd5f5;
+  margin: 0 0 18px;
+  color: #cbd5e1;
+  line-height: 1.75;
+}
+
+.about__text:last-child {
+  margin-bottom: 0;
 }

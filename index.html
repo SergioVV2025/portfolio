@@ -1,200 +1,240 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portafolio de Sergio Verástegui Vega</title>
-  </head>
-  <body></body>
-</html>
-<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portafolio de Sergio Verástegui Vega, desarrollador Frontend con React y JavaScript con experiencia práctica en aplicaciones full stack."
+    />
     <title>Sergio Verástegui Vega | Frontend Developer</title>
     <link rel="stylesheet" href="./pages/index.css" />
   </head>
   <body class="page">
-    <div class="page__content">
+    <main class="page__content">
       <section class="hero">
         <div class="hero__content">
+          <p class="hero__eyebrow">Frontend Developer · React · JavaScript</p>
           <h1 class="hero__name">Sergio Verástegui Vega</h1>
-          <h2 class="hero__role">Frontend Developer</h2>
+          <h2 class="hero__role">Construyo aplicaciones web para necesidades reales</h2>
           <p class="hero__tagline">
-            Desarrollo aplicaciones frontend que automatizan procesos y
-            transforman información en soluciones funcionales.
+            Desarrollo interfaces responsivas, integro APIs y convierto flujos de
+            trabajo en productos web funcionales. Actualmente amplío mi práctica
+            hacia desarrollo full stack con Node.js, Express y MongoDB.
           </p>
-          <div>
+          <div class="hero__actions">
             <a href="#projects" class="hero__button">Ver proyectos</a>
+            <a href="#contact" class="hero__button hero__button_secondary">Contacto</a>
           </div>
         </div>
       </section>
+
       <section id="projects" class="projects">
-        <h2 class="projects__title">Proyectos</h2>
+        <div class="section-heading">
+          <p class="section-heading__eyebrow">Trabajo reciente</p>
+          <h2 class="projects__title">Proyectos seleccionados</h2>
+          <p class="section-heading__text">
+            Dos proyectos que muestran cómo trabajo con requerimientos reales,
+            iteración de producto, APIs y desarrollo de funcionalidades completas.
+          </p>
+        </div>
 
-        <div class="project">
-          <h3 class="project__title">
-            Generador de fichas técnicas inmobiliarias
-          </h3>
+        <article class="project project_featured">
+          <div class="project__header">
+            <p class="project__label">Proyecto real · En uso</p>
+            <h3 class="project__title">Property Sheet Generator / Fichas</h3>
+          </div>
+
+          <div class="project__gallery project__gallery_two">
+            <figure class="project__figure">
+              <img
+                class="project__image"
+                src="./images/fichas-admin.png"
+                alt="Panel de administración de propiedades del Property Sheet Generator"
+              />
+              <figcaption class="project__caption">Administración de propiedades y contenido.</figcaption>
+            </figure>
+            <figure class="project__figure project__figure_phone">
+              <img
+                class="project__image project__image_phone"
+                src="./images/fichas-detail-top.png"
+                alt="Ficha inmobiliaria responsive con galería y características"
+              />
+              <figcaption class="project__caption">Ficha final optimizada para consulta móvil.</figcaption>
+            </figure>
+          </div>
 
           <p class="project__description">
-            Aplicación frontend que automatiza la creación de fichas técnicas a
-            partir de datos no estructurados (imágenes, características y
-            descripciones), generando páginas HTML listas para publicación y
-            compartición.
+            Aplicación web desarrollada para crear, administrar y publicar fichas
+            inmobiliarias dentro de un flujo de trabajo real. El proyecto ha
+            evolucionado conforme cambiaron las necesidades de uso, especialmente
+            la forma en que las propiedades se consultan y comparten desde móvil.
           </p>
 
-          <p class="project__stack">HTML · CSS · JavaScript · LocalStorage</p>
+          <div class="project__details">
+            <div>
+              <h4 class="project__subtitle">Qué resolví</h4>
+              <p class="project__detail-text">
+                Rediseñé la entrega de la ficha para priorizar fotografías y lectura
+                rápida, incorporando galería táctil con precarga de imágenes,
+                características principales con iconos, amenidades, contacto directo
+                por WhatsApp, datos del agente y ubicación integrada con Google Maps.
+              </p>
+            </div>
+            <div>
+              <h4 class="project__subtitle">Por qué importa</h4>
+              <p class="project__detail-text">
+                Automatiza una tarea repetitiva, mantiene una presentación consistente
+                entre propiedades y genera páginas HTML listas para publicar y compartir,
+                incluyendo metadatos Open Graph.
+              </p>
+            </div>
+          </div>
 
-          <p class="project__impact">
-            Reduce el tiempo de creación de fichas y estandariza la presentación
-            de propiedades.
+          <p class="project__stack">
+            JavaScript · HTML5 · CSS3 · localStorage · Google Maps · Open Graph · Git/GitHub
           </p>
 
           <div class="project__links">
-            <a
-              href="https://sergiovv2025.github.io/property-sheet-generator/"
-              target="_blank"
-              >🔗 Ver Demo</a
-            >
-            <a
-              href="https://github.com/SergioVV2025/property-sheet-generator"
-              target="_blank"
-              >💻 Ver Código</a
-            >
+            <a href="https://sergiovv2025.github.io/property-sheet-generator/" target="_blank" rel="noreferrer">Ver demo</a>
+            <a href="https://github.com/SergioVV2025/property-sheet-generator" target="_blank" rel="noreferrer">Ver código</a>
           </div>
-        </div>
+        </article>
 
-        <div class="project">
-          <h3 class="project__title">Around the U.S.</h3>
+        <article class="project">
+          <div class="project__header">
+            <p class="project__label">Full Stack · Proyecto reciente</p>
+            <h3 class="project__title">Saade Full Stack</h3>
+          </div>
+
+          <div class="project__gallery project__gallery_saade">
+            <figure class="project__figure project__figure_saade-main">
+              <img
+                class="project__image"
+                src="./images/saade-home.png"
+                alt="Página de inicio de Saade con sesión de usuario iniciada"
+              />
+              <figcaption class="project__caption">Inicio responsive con identidad visual de Saade y sesión autenticada.</figcaption>
+            </figure>
+            <figure class="project__figure">
+              <img
+                class="project__image"
+                src="./images/saade-reservations.png"
+                alt="Vista Mis reservaciones de Saade con opciones para editar y cancelar"
+              />
+              <figcaption class="project__caption">Reservaciones del usuario con acciones de edición y cancelación.</figcaption>
+            </figure>
+            <figure class="project__figure">
+              <img
+                class="project__image"
+                src="./images/saade-explore.png"
+                alt="Página Explore de Saade con búsqueda de eventos de Los Ángeles"
+              />
+              <figcaption class="project__caption">Explore integra Ticketmaster Discovery API para descubrir eventos en Los Ángeles.</figcaption>
+            </figure>
+          </div>
 
           <p class="project__description">
-            Aplicación web interactiva que permite gestionar un perfil de
-            usuario y una colección de tarjetas dinámicas, integrando datos
-            desde una API REST y actualizando la interfaz en tiempo real.
+            Aplicación full stack para Saade, un restaurante en Silver Lake, Los
+            Ángeles. El proyecto evolucionó de una interfaz conectada a una API
+            externa a una aplicación con backend propio, autenticación, persistencia
+            de datos y operaciones protegidas por usuario.
           </p>
 
-          <p class="project__stack">HTML · CSS · JavaScript · API REST · OOP</p>
+          <div class="project__details">
+            <div>
+              <h4 class="project__subtitle">Qué implementé</h4>
+              <p class="project__detail-text">
+                Registro e inicio de sesión, persistencia de sesión con JWT, rutas
+                protegidas y flujo CRUD de reservaciones: crear, consultar, editar y
+                cancelar. El backend valida que cada reservación pertenezca al usuario
+                autenticado antes de modificarla.
+              </p>
+            </div>
+            <div>
+              <h4 class="project__subtitle">Integración y producción</h4>
+              <p class="project__detail-text">
+                React y Vite en frontend; Node.js, Express, MongoDB y Mongoose en
+                backend. También integra Ticketmaster Discovery API y está desplegado
+                con Nginx, PM2 y HTTPS mediante Let's Encrypt.
+              </p>
+            </div>
+          </div>
 
-          <p class="project__impact">
-            Implementa operaciones CRUD completas y sincronización con backend,
-            mostrando el flujo real de una aplicación frontend conectada a
-            servicios externos.
+          <p class="project__stack">
+            React · Vite · React Router · JavaScript · Node.js · Express · MongoDB · Mongoose · JWT · bcrypt · REST API
           </p>
 
           <div class="project__links">
-            <a
-              href="https://sergiovv2025.github.io/web_project_around_es/"
-              target="_blank"
-              >🔗 Ver Demo</a
-            >
-            <a
-              href="https://github.com/SergioVV2025/web_project_around_es"
-              target="_blank"
-              >💻 Ver Código</a
-            >
+            <a href="https://sergiovv2026.paranormalgroup.com" target="_blank" rel="noreferrer">Ver demo</a>
+            <a href="https://github.com/SergioVV2025/saade-fullstack" target="_blank" rel="noreferrer">Ver código</a>
           </div>
-        </div>
-
-        <div class="project">
-          <h3 class="project__title">De Patria a Patria</h3>
-
-          <p class="project__description">
-            Sitio web responsive que presenta contenido visual y narrativo,
-            adaptándose a distintos tamaños de pantalla y manteniendo una
-            estructura clara y consistente.
-          </p>
-
-          <p class="project__stack">HTML · CSS · Flexbox · Grid · BEM</p>
-
-          <p class="project__impact">
-            Consolida bases sólidas de maquetación moderna, implementando
-            layouts adaptativos sin depender de frameworks.
-          </p>
-
-          <div class="project__links">
-            <a
-              href="https://sergiovv2025.github.io/web_project_homeland/"
-              target="_blank"
-              >🔗 Ver Demo</a
-            >
-            <a
-              href="https://github.com/SergioVV2025/web_project_homeland"
-              target="_blank"
-              >💻 Ver Código</a
-            >
-          </div>
-        </div>
+        </article>
       </section>
+
       <section class="about">
         <div class="about__me">
+          <p class="section-heading__eyebrow">Perfil</p>
           <h2 class="about__title">Sobre mí</h2>
-
           <p class="about__text">
-            Licenciado en Sistemas Computarizados e Informática con experiencia
-            en desarrollo con Java y bases de datos. <br />
-            Actualmente desarrollador frontend en formación dentro de un
-            bootcamp Full Stack. Me enfoco en construir aplicaciones web
-            funcionales que resuelvan problemas reales y mejoren la forma en que
-            se organiza la información.
+            Soy desarrollador Frontend enfocado en crear aplicaciones web
+            responsivas y centradas en el usuario con React y JavaScript. Me interesa
+            convertir necesidades concretas en soluciones funcionales que puedan
+            utilizarse y evolucionar con el tiempo.
           </p>
-
           <p class="about__text">
-            Disfruto trabajar en la intersección entre lógica y experiencia de
-            usuario, creando interfaces dinámicas con JavaScript y conectándolas
-            a flujos de datos estructurados. Actualmente continúo ampliando mis
-            conocimientos hacia tecnologías como React y desarrollo backend.
+            Tengo formación en Sistemas Computarizados e Informática y experiencia
+            previa en entornos de tecnología. Actualmente combino mi enfoque frontend
+            con desarrollo backend usando Node.js, Express, MongoDB, autenticación JWT
+            y APIs REST.
           </p>
-
           <p class="about__text">
-            Busco mi primera oportunidad como desarrollador frontend, con
-            interés en crecer hacia áreas como backend y seguridad, y participar
-            en proyectos donde pueda aportar soluciones prácticas y seguir
-            aprendiendo constantemente.
+            Busco oportunidades como Frontend Developer / React Developer, con la
+            intención de seguir creciendo hacia un perfil full stack mientras aporto
+            soluciones prácticas desde el primer día.
           </p>
         </div>
       </section>
+
       <section class="skills">
         <div class="skills__group">
+          <p class="section-heading__eyebrow">Herramientas</p>
           <h2 class="skills__title">Tech Stack</h2>
-
-          <p>
-            <strong>Frontend:</strong> HTML5, CSS3 (BEM), JavaScript (ES6+),
-            Responsive Design
-          </p>
-          <p>
-            <strong>Frontend avanzado:</strong> Manipulación del DOM, Consumo de
-            APIs, OOP
-          </p>
-          <p><strong>Herramientas:</strong> Git, GitHub, VS Code</p>
-        </div>
-      </section>
-      <section class="contact">
-        <div class="contact__me">
-          <h2 class="contact__title">Contacto</h2>
-
-          <p class="contact__text">
-            ¿sTe interesa trabajar conmigo o quieres saber más sobre mis
-            proyectos? Puedes contactarme aquí:
-          </p>
-
-          <div class="contact__links">
-            <a href="mailto:verasteguisergio@hotmail.com"
-              >📧 verasteguisergio@hotmail.com</a
-            >
-
-            <a
-              href="https://www.linkedin.com/in/sergio-verastegui-vega"
-              target="_blank"
-              >💼 LinkedIn</a
-            >
-            <a href="https://github.com/SergioVV2025" target="_blank"
-              >💻 GitHub</a
-            >
+          <div class="skills__grid">
+            <div class="skills__item">
+              <strong>Frontend</strong>
+              <p>React, JavaScript ES6+, HTML5, CSS3, Responsive Design, BEM</p>
+            </div>
+            <div class="skills__item">
+              <strong>Integración</strong>
+              <p>REST APIs, Fetch API, React Router, autenticación JWT</p>
+            </div>
+            <div class="skills__item">
+              <strong>Backend</strong>
+              <p>Node.js, Express, MongoDB, Mongoose, bcrypt</p>
+            </div>
+            <div class="skills__item">
+              <strong>Herramientas</strong>
+              <p>Git, GitHub, Vite, VS Code, Nginx, PM2</p>
+            </div>
           </div>
         </div>
       </section>
-    </div>
+
+      <section id="contact" class="contact">
+        <div class="contact__me">
+          <p class="section-heading__eyebrow">Hablemos</p>
+          <h2 class="contact__title">Contacto</h2>
+          <p class="contact__text">
+            ¿Te interesa trabajar conmigo o quieres conocer más sobre mis proyectos?
+          </p>
+          <div class="contact__links">
+            <a href="mailto:verasteguisergio@hotmail.com">📧 verasteguisergio@hotmail.com</a>
+            <a href="https://www.linkedin.com/in/sergio-verastegui-vega" target="_blank" rel="noreferrer">💼 LinkedIn</a>
+            <a href="https://github.com/SergioVV2025" target="_blank" rel="noreferrer">💻 GitHub</a>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
