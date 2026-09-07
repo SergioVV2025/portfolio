@@ -19,7 +19,11 @@ body {
 
 .page__content {
   min-height: 100vh;
-  background: linear-gradient(180deg, rgba(5, 12, 25, 0.91), rgba(7, 15, 29, 0.96));
+  background: linear-gradient(
+    180deg,
+    rgba(5, 12, 25, 0.7),
+    rgba(7, 15, 29, 0.7)
+  );
 }
 
 section {
